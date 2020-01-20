@@ -1,35 +1,75 @@
+autoUpdate:
+  enabled: false
+  schedule: ""
+bootConfigURL: https://github.com/jenkins-x/jenkins-x-boot-config.git
 cluster:
-  clusterName: ""
-  environmentGitOwner: ""
-  environmentGitPublic: false
-  project: ""
+  clusterName: riderforest
+  environmentGitOwner: muirp
+  environmentGitPublic: true
+  gitKind: github
+  gitName: github
+  gitServer: https://github.com
+  namespace: jx
+  project: apps-dev-229310
   provider: gke
-  zone: ""
-gitops: true
+  registry: gcr.io
+  zone: europe-west2-a
 environments:
-- key: dev
-- key: staging
-- key: production
+- ingress:
+    domain: 35.197.255.25.nip.io
+    externalDNS: false
+    namespaceSubDomain: -jx.
+    tls:
+      email: ""
+      enabled: false
+      production: false
+  key: dev
+- ingress:
+    domain: ""
+    externalDNS: false
+    namespaceSubDomain: ""
+    tls:
+      email: ""
+      enabled: false
+      production: false
+  key: staging
+- ingress:
+    domain: ""
+    externalDNS: false
+    namespaceSubDomain: ""
+    tls:
+      email: ""
+      enabled: false
+      production: false
+  key: production
+gitops: true
 ingress:
-  domain: ""
+  domain: 35.197.255.25.nip.io
   externalDNS: false
+  namespaceSubDomain: -jx.
   tls:
     email: ""
     enabled: false
     production: false
 kaniko: true
+repository: nexus
 secretStorage: local
 storage:
-  logs:
+  backup:
     enabled: false
     url: ""
+  logs:
+    enabled: true
+    url: gs://riderforest-logs-b7fd3ce0-e397-4e39-8b9f-da932da4a25a
   reports:
     enabled: false
     url: ""
   repository:
     enabled: false
     url: ""
+vault: {}
+velero: {}
 versionStream:
-  ref: "master"
+  ref: v1.0.309
   url: https://github.com/jenkins-x/jenkins-x-versions.git
 webhook: prow
