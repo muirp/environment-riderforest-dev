@@ -1,0 +1,7 @@
+dependencies:
+- host: github.com
+  owner: muirp
+  repo: demo111
+  url: https://github.com/muirp/demo111.git
+  version: ""
+  versionURL: ""
