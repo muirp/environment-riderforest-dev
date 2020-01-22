@@ -11,3 +11,6 @@ tekton:
 dex:
   certs:
     newApi: true
+tekton-sdm-app:
+  sdm:
+    account: cloudbees
