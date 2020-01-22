@@ -1,10 +1,10 @@
 adminUser:
-  password: local:riderforest/adminUser:password
+  password: vault:riderforest/adminUser:password
   username: admin
 enableDocker: false
 pipelineUser:
   email: muirp-owner@bleepbleep.org.uk
-  token: local:riderforest/pipelineUser:token
+  token: vault:riderforest/pipelineUser:token
   username: muirp-owner
 prow:
-  hmacToken: local:riderforest/prow:hmacToken
+  hmacToken: vault:riderforest/prow:hmacToken
