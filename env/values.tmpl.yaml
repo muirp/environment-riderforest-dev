@@ -15,3 +15,4 @@ tekton-sdm-app:
   sdm:
     account: cloudbees
     privateKey: vault:sdm:privateKey
+    installId: riderforest
