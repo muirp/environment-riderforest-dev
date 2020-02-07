@@ -11,8 +11,7 @@ tekton:
 dex:
   certs:
     newApi: true
-tekton-sdm-app:
+jx-sdm-app:
   sdm:
     account: cloudbees
     privateKey: vault:sdm:privateKey
-    installId: riderforest
