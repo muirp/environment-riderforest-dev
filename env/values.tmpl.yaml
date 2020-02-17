@@ -14,5 +14,9 @@ dex:
 jx-sdm-app:
   sdm:
     account: cloudbees
+    privateKey: vault:sdm:privateKey
+tekton-sdm-app:
+  sdm:
+    account: cloudbees
     privateKey: vault:sdm:tektonPrivateKey
     installId: riderforest
