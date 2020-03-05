@@ -21,6 +21,9 @@ dependencies:
 - name: tekton-sdm-app
   repository: http://chartmuseum.jenkins-x.io
   version: 0.0.25
+- name: jx-sdm-app
+  repository: http://chartmuseum.jenkins-x.io
+  version: 0.0.14
 #- condition: chartmuseum.enabled
 #  name: chartmuseum
 #  repository: http://chartmuseum.jenkins-x.io
