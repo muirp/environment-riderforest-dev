@@ -5,3 +5,9 @@ dependencies:
   url: https://github.com/muirp/demo111.git
   version: ""
   versionURL: ""
+- host: github.com
+  owner: muirp
+  repo: riderforest-golang
+  url: https://github.com/muirp/riderforest-golang.git
+  version: ""
+  versionURL: ""
