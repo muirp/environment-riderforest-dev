@@ -1,0 +1,21 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: muirp
+    provider: github
+    repository: riderforest-golang
+  name: muirp-riderforest-golang
+spec:
+  description: Imported application for muirp/riderforest-golang
+  httpCloneURL: https://github.com/muirp/riderforest-golang.git
+  org: muirp
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: riderforest-golang
+  scheduler:
+    kind: ""
+    name: ""
+  url: https://github.com/muirp/riderforest-golang.git
